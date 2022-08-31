@@ -12,9 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(__dirname + '/public'))
 
-// app.get('/images/img1.jpg',(req,res)=>{
-//     res.sendFile(__dirname + '/index.html')
-// })
+
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + "/index.html")
 })
